@@ -224,14 +224,14 @@ section {
   margin-bottom: 100px;
 }
 
-.save-life-title {
+.save-life-title, .survive-title {
   font-family: var(--font-primary);
   font-weight: var(--font-weight-4);
   font-size: 30px;
   margin-bottom: 15px;
 }
 
-.save-life-text {
+.save-life-text, .survive-text {
   font-family: var(--font-secondary);
   font-weight: var(--font-weight-1);
   font-size: 14px;
@@ -262,6 +262,17 @@ section {
   border-radius: 5px;
 }
 
+/* survival section starts from here */
+
+.survive {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 100px;
+}
+
 /* responsive part */
 
 @media screen and (max-width: 992px) and (min-width: 577px) {
@@ -276,5 +287,10 @@ section {
     .save-life {
       display: flex;
      flex-direction: column-reverse;
+    }
+
+    .survive {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
     }
 }
