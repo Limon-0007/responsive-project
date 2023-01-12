@@ -214,17 +214,67 @@ section {
     box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* save life section starts from here */
+
+.save-life {
+  max-width: 85%;
+  margin: 0 auto;
+  gap: 3rem;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.save-life-title {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-4);
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.save-life-text {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-1);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.texts button {
+  padding: 10px 12px;
+  border: 2px solid var(--secondary-clr);
+  background-color: var(--secondary-clr);
+  color: var(--primary-clr);
+  font-weight: var(--font-weight-3);
+  font-family: var(--font-primary);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+.texts button:hover {
+  background: none;
+  color: var(--secondary-clr);
+}
+
+.img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
 /* responsive part */
 
 @media screen and (max-width: 992px) and (min-width: 577px) {
 }
 
 @media screen and (max-width: 576px) {
-  body {
-    margin: 0 auto;
-  }
     .card {
         display: flex;
         flex-direction: column;
+    }
+
+    .save-life {
+      display: flex;
+     flex-direction: column-reverse;
     }
 }
